@@ -1,13 +1,14 @@
-import "./styles.css";
+import './styles.css';
+import * as El from './styles';
 
 export default function App() {
   return (
-    <div className="App">
-      <div>操作栏</div>
-      <div>
+    <El.Wrap className='App'>
+      <El.ToolMenu>操作栏</El.ToolMenu>
+      <El.Content>
+        <El.RulerRow>row</El.RulerRow>
+        <El.RulerCol>col</El.RulerCol>
         <div>
-          <div>row</div>
-          <div>col</div>
           <div>
             <table>
               <thead>
@@ -32,8 +33,8 @@ export default function App() {
             </table>
           </div>
         </div>
-      </div>
-      <div>sheetlist</div>
-    </div>
+      </El.Content>
+      <El.SheetListRow>sheetlist</El.SheetListRow>
+    </El.Wrap>
   );
 }
