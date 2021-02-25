@@ -10,7 +10,7 @@ export interface ICell {
   // 原始值
   value: any;
   // 合并单元格
-  mergeCell: {
+  mergeCell?: {
     r: number;
     c: number;
   };

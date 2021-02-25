@@ -1,5 +1,99 @@
 import './styles.css';
+import { ISheetOption } from './type';
 import * as El from './styles';
+
+const initialCellData: ISheetOption['cellData'] = [
+  [
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+  ],
+  [
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+  ],
+  [
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+    {
+      cellType: {
+        fa: '*',
+        t: 'number',
+      },
+      monitor: '12',
+      value: 12,
+      mergeCell: {
+        r: 2,
+        c: 2,
+      },
+    },
+  ],
+];
 
 export default function App() {
   return (
@@ -10,14 +104,7 @@ export default function App() {
         <El.RowHeader>col</El.RowHeader>
         <div>
           <div>
-            <table>
-              <thead>
-                <tr>
-                  <th>th1</th>
-                  <th>th2</th>
-                  <th>th3</th>
-                </tr>
-              </thead>
+            <El.Table>
               <tbody>
                 <tr>
                   <td>1</td>
@@ -30,7 +117,7 @@ export default function App() {
                   <td>3</td>
                 </tr>
               </tbody>
-            </table>
+            </El.Table>
           </div>
         </div>
       </El.Content>

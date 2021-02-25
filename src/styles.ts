@@ -6,7 +6,7 @@ export const Wrap = styled.div`
 `;
 
 export const ToolMenu = styled.div`
-  height: 100px;
+  height: 64px;
   box-shadow: 0 2px 2px 0 #0007;
   background: #3493;
 `;
@@ -24,7 +24,32 @@ export const RowHeader = styled.div`
 export const ColHeader = styled.div`
   height: 20px;
 `;
+
 export const SheetListRow = styled.div`
-  height: 80px;
+  height: 40px;
   background: #3493;
+`;
+
+export const Table = styled.table`
+  border: 1px solid #444;
+  border-spacing: 0;
+  tr {
+    border-bottom: 1px solid #444;
+    &:last-child {
+      td,
+      th {
+        border-bottom: 0;
+      }
+    }
+    td:last-child,
+    th:last-child {
+      border-right: 0;
+    }
+  }
+  td,
+  th {
+    border-right: 1px solid #444;
+    border-bottom: 1px solid #444;
+    padding: 4px;
+  }
 `;
