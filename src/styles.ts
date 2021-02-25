@@ -16,13 +16,13 @@ export const Content = styled.div`
   overflow: hidden;
 `;
 
-export const RulerRow = styled.div`
-  height: 20px;
-`;
-
-export const RulerCol = styled.div`
+export const RowHeader = styled.div`
   width: 20px;
   height: 100%;
+`;
+
+export const ColHeader = styled.div`
+  height: 20px;
 `;
 export const SheetListRow = styled.div`
   height: 80px;

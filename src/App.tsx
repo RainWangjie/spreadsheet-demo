@@ -6,8 +6,8 @@ export default function App() {
     <El.Wrap className='App'>
       <El.ToolMenu>操作栏</El.ToolMenu>
       <El.Content>
-        <El.RulerRow>row</El.RulerRow>
-        <El.RulerCol>col</El.RulerCol>
+        <El.ColHeader></El.ColHeader>
+        <El.RowHeader>col</El.RowHeader>
         <div>
           <div>
             <table>
